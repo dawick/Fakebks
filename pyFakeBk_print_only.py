@@ -103,7 +103,7 @@ if __name__ == "__main__":
                 choice[-2] = 'REALBK3.PDF'
 
                 
-            #webbrowser.open("http://www.bearishwearish.com/fakebooks/"+choice[-2]+"#page="+base)
+
             print '"C:\\Program Files\\Adobe\\Reader 9.0\\Reader\\AcroRd32.exe" /A "page='+base+'" "C:\\Test\\FakeBook\\'+choice[-2]+'.pdf"'
             #p = Popen('"C:\\Program Files\\Adobe\\Reader 9.0\\Reader\\AcroRd32.exe" /A "page='+base+'" "'+choice[-2]+'.pdf"')
         else:
