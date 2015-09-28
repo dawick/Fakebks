@@ -19,8 +19,7 @@ def menu(locs):
     count = 1
     for entry in locs:
         print count, entry[0], ': ', entry[1], entry[2]
-        #count = count + 1
-        count += 1 #same thing
+        count += 1
     print
     user = raw_input('Make selection: ')
     user = int(user)
@@ -54,7 +53,7 @@ if __name__ == "__main__":
         search_list = search_string.split()
         for x in search_list:
             search_cap.append(x.capitalize())
-
+    
         oldlst = newfile
         newlist = []
         locs = []
@@ -65,13 +64,13 @@ if __name__ == "__main__":
                     newlist.append(entry)
             oldlst = newlist
         #print newlist
-
+    
         for line in newlist:
             page = line[-1]
             filename = line[-2]
             title = ' '.join(line[:-2])
             locs.append([title, filename, page])
-
+    
         if len(locs)>=1:
             choice = menu(locs)#runs menu function
             print choice
